@@ -21,8 +21,6 @@ def remove_non_strings(array)
   array.delete_if { |object| object.is_a?(String) == false  }
 end
 
-array = [{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
-
 def count_elements(array)
   array.group_by { |element| element }
     .map { |k, v| k.merge(count: v.length)  }
