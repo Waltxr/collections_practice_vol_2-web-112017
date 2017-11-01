@@ -26,14 +26,10 @@ def count_elements(array)
     .map { |k, v| k.merge(count: v.length)  }
 end
 
-# def merge_data(data1, data2)
-#     data1.first.values.map.with_index do |value, index|
-#       data2[index].merge(value)
-#     end
-# end
-
-def merge_data(v1, v2)
-  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
+def merge_data(data1, data2)
+    data1.first.values.map.with_index do |value, index|
+      data2[index].merge(value)
+    end
 end
 
 def find_cool
