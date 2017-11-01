@@ -37,5 +37,7 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-  schools.group_by { |obj| obj.value }
+  schools.each {key, value} do
+    if key.values_at(value) == 
+  end
 end
