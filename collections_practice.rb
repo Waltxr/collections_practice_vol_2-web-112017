@@ -27,12 +27,14 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-    if keys.is?(Array)
+  if keys.is?(Array)
 
     keys.first.values.map.with_index do |value, index|
       data[index].merge(value)
-      
+
     end
+  end
+  
 end
 
 def find_cool
