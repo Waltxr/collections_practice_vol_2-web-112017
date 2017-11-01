@@ -27,10 +27,7 @@ def count_elements(array)
 end
 
 def merge_data(key, data)
-  array = []
-  h = Hash.new { |hash, key| hash[key] = ":#{key}=>#{data}" }
-  array << hash
-  return array
+  
 end
 
 def find_cool
