@@ -26,9 +26,9 @@ def count_elements(array)
     .map { |k, v| k.merge(count: v.length)  }
 end
 
-def merge_data(keys, data)
+def merge_data(key, data)
   array = []
-  hash = Hash.new { |hash, key| hash[key] = data }
+  h = Hash.new { |hash, key| hash[key] = ":#{key}=>#{data}" }
   array << hash
   return array
 end
