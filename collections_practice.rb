@@ -38,6 +38,6 @@ end
 
 def organize_schools(schools)
   schools.each.with_object({}) do |(school, location), object|
-    school[index][:location]
+    
   end
 end
