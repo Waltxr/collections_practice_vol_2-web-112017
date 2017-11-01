@@ -37,7 +37,7 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-  schools.each.with_object({}) do |(school, location), object|
+  schools.each.with_object({}) { |school, info| hash }
     
   end
 end
