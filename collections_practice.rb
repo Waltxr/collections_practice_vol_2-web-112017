@@ -27,8 +27,8 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys.first.values.map.with_index do |value, index|
-    data[index].merge(value)
+  data.first.values.map.with_index do |value, index|
+    keys[index].merge(value)
   end
 end
 
