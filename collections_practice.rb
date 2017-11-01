@@ -26,7 +26,7 @@ def count_elements(array)
     .map { |k, v| k.merge(count: v.length)  }
 end
 
-def merge_data(h1, h2)
+def merge_data(data1, data2)
   
 end
 
