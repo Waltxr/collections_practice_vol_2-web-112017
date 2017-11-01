@@ -26,10 +26,8 @@ def count_elements(array)
     .map { |k, v| k.merge(count: v.length)  }
 end
 
-def merge_data(key, data)
-  h = Hash.new
-  h["#{key}"] = "#{data}"
-  return h
+def merge_data(h1, h2)
+  
 end
 
 def find_cool
