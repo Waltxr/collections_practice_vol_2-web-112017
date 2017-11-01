@@ -28,7 +28,8 @@ end
 
 def merge_data(keys, data)
   array = []
-  array << Hash.new { |hash, key| hash[key] = data  }
+  hash = Hash.new { |hash, key| hash[key] = data }
+  array << hash
   return array
 end
 
