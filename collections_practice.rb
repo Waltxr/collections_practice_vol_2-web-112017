@@ -37,7 +37,5 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-  schools.each {key, value} do
-    if key.values_at(value) == 
-  end
+  
 end
