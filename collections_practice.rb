@@ -40,7 +40,7 @@ def organize_schools(schools)
   # schools.each.with_object({}) do |(school, info), hash|
   #   puts (hash[info[:location]] || []) << school
   # end
-  hash.each_with_object({}) do |(name, data), res|
+  schools.each_with_object({}) do |(name, data), res|
   (res[data[:location]] ||= []) << name
 end
 end
