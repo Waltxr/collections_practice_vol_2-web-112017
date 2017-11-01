@@ -37,5 +37,7 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-  
+  schools.map.with_index do |school, index| school.keys[index][:location]
+    
+  end
 end
